@@ -3,7 +3,7 @@ Bulma theme preview
 Themes for [Bulma](https://bulma.io), inspired by [Bulmaswatch](https://jenil.github.io/bulmaswatch/).
 HTML page with all [Bulma`s](https://bulma.io) elements. Helps to prepare custom UI kit for you web page.
 
-<img src="https://raw.githubusercontent.com/jgthms/bulma/main/assets/preview.png" alt="Bulma-theme-preview" style="max-width:100%;" width="600">
+<img src="https://raw.githubusercontent.com/djwinston/bulma-theme-preview/main/public/assets/preview.png" alt="Bulma-theme-preview" style="max-width:100%;" width="600">
 
 Get started
 -----
@@ -22,6 +22,7 @@ yarn start
 ```
 - sass/_variables.scss - add your variables [Bulma variables](https://bulma.io/documentation/customize/variables/)
 - sass/_overrides.scss - add your override style for UI
+- copy variables.scss & overrides.scss to your project and import Bulma in order like as sass/main.scss
 
 
 Credits
