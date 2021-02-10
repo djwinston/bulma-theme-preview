@@ -1,0 +1,216 @@
+// Overrides
+@if $bulma-import-font {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+}
+
+body,
+input {
+  font-family: $family-serif;
+  color: $haiti;
+}
+
+a {
+  transition: all 200ms ease;
+}
+
+.button {
+  padding: 1.2rem 2.75rem;
+  border-radius: 3.333rem;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  height: auto;
+
+  &[disabled] {
+    color: $white;
+    background-color: $waikawa-grey-transparent;
+  }
+
+  &.is-head {
+    background-color: $white;
+    box-shadow: $shadow-button-basic rgba($primary, 0.3);
+    color: $paua;
+    &:focus {
+      color: $paua;
+    }
+
+    &:active,
+    &:hover,
+    &.is-active,
+    &.is-focused {
+      color: $white;
+    }
+  }
+  &.is-small {
+    border-radius: 40px;
+    font-size: 0.85rem;
+  }
+  &.is-primary {
+    &:hover {
+      background-color: $iris-blue;
+      box-shadow: $shadow-button-glow rgba($primary, 0.5);
+    }
+  }
+  &.is-glow {
+    box-shadow: $shadow-button-glow rgba($primary, 0.5);
+  }
+}
+
+.button {
+  transition: all 200ms ease;
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name} {
+      &.is-active,
+      &.is-focused,
+      &:active,
+      &:focus {
+        box-shadow: $shadow-button-basic $gradins;
+      }
+    }
+  }
+}
+
+.content {
+  font-size: 1.1rem;
+  font-family: $family-serif;
+}
+
+.card-header-title,
+.menu-label,
+.message-header,
+.modal-card-title,
+.panel-heading,
+.subtitle,
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-family: $family-heading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $paua;
+}
+
+.is-size-5 {
+  font-size: 1.1675rem !important;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.input,
+.textarea {
+  transition: all 200ms ease;
+  box-shadow: none;
+  &.sb {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: $lavender;
+    border-radius: 0;
+    padding: 0;
+    &:active,
+    &:focus {
+      box-shadow: none;
+      border-bottom: 2px solid rgba($robins-egg-blue, 1);
+      &.error {
+        border-bottom: 2px solid rgba($bitter-sweet, 1);
+      }
+    }
+  }
+}
+
+.label {
+  &.sb {
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $manatee;
+  }
+}
+
+.notification {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name} {
+      a:not(.button) {
+        color: $color-invert;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.navbar {
+  border: 1px solid $border;
+}
+
+.hero {
+  .navbar {
+    border: none;
+    box-shadow: 0 1px 0 rgba($border, 0.25);
+  }
+}
+.arrow-link {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  background: $white-lilac;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+.card {
+  &.sb {
+    min-width: 302px;
+    min-height: 302px;
+    $card-border-color: $grey-darker;
+    box-shadow: 0 0 1px $grey-light;
+    background-color: $white;
+    border-radius: 0;
+
+    &.background {
+      background-color: $white-lilac;
+      .wrap-arrow {
+        .arrow-link {
+          background: $white;
+        }
+      }
+    }
+
+    .card-header {
+      box-shadow: none;
+      border-bottom: 1px solid $grey-lighter;
+    }
+    .card-content {
+      padding: 0;
+    }
+  }
+}

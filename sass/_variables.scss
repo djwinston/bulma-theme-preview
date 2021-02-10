@@ -1,0 +1,59 @@
+////////////////////////////////////////////////
+// SPARKYBIT
+////////////////////////////////////////////////
+
+$paua: #271b55;
+$robins-egg-blue: #12c3cc;
+$white-lilac: #f2f2fb;
+$iris-blue: #16b7bf;
+$haiti: #24203f;
+$jacarta: #3d3955;
+$comet: #5a5b76;
+$manatee: #9194a8;
+$link-water: #c8ccd8;
+$lavender: #e6e7ef;
+$waikawa-grey-transparent: rgba(101, 111, 146, 0.3);
+$bitter-sweet: #ff6767;
+$shamrock: #46c798;
+$gradins: #ffd074;
+
+// Custom colors
+$custom-colors: (
+  "robins": (
+    $robins-egg-blue,
+    findColorInvert($robins-egg-blue),
+  ),
+);
+
+$shadow-button-basic: 0px 5px 20px;
+$shadow-button-glow: 0px 15px 30px;
+$shadow-surface: 0px 10px 50px;
+
+$form-border-radius: 5px;
+
+$link: $robins-egg-blue !default;
+$primary: $robins-egg-blue !default;
+$danger: $bitter-sweet;
+
+$subtitle-color: $comet;
+
+$body-size: 12px;
+
+$family-serif: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue",
+  Oxygen, Cantarell, sans-serif;
+$family-heading: $family-serif;
+
+$navbar-height: 5rem;
+$navbar-item-hover-color: $link;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $link;
+$navbar-item-active-background-color: transparent;
+
+$navbar-dropdown-item-hover-color: $link;
+$navbar-dropdown-item-hover-background-color: transparent;
+$navbar-dropdown-item-active-color: $link;
+$navbar-dropdown-item-active-background-color: transparent;
+
+$bulma-import-font: true !default;
+
+$control-height: 2.273em;
