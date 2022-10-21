@@ -4,13 +4,18 @@
   "description": "Helps to prepare custom Bulma's theme",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "bulma": "^0.9.2",
-    "cssnano": "^4.1.10",
+    "browser-sync": "^2.27.10",
+    "bulma": "^0.9.4",
+    "cssnano": "^5.1.13",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-terser": "^2.0.1"
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.18",
+    "sass": "^1.55.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.8.14"
   },
   "scripts": {
     "start": "gulp"
@@ -19,7 +24,7 @@
   "license": "MIT",
   "dependencies": {},
   "engines": {
-    "node": ">=14.15.0",
+    "node": ">=16.13.0",
     "yarn": ">=1.22.0"
   }
 }

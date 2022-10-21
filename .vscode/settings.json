@@ -2,7 +2,6 @@
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
-  "editor.renderIndentGuides": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -22,5 +21,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cSpell.language": "en-GB",
-  "cSpell.words": []
+  "cSpell.words": [],
+  "editor.guides.indentation": true
 }
